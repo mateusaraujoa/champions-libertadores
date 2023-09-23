@@ -1,0 +1,1 @@
+Neste projeto vamos criar uma página sobre a Copa Libertadores, onde listaremos todos os campeões do torneio. Nesta página, que será simples e estática, estará listado todas as edições, com seus respectivos campeões e vices. O visual será bem simples, contendo em seu cabeçalho o logo dá página e a lista de edições/campeões.
