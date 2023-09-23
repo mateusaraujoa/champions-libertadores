@@ -1,0 +1,37 @@
+/* Definindo a fonte e a cor do texto para todo o documento */
+body {
+    font-family: 'Nunito sans', sans-serif;
+    color: #222;
+}
+
+/* Definindo o estilo do título principal */
+h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Definindo o estilo da tabela */
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Definindo o estilo das células da tabela */
+td, th {
+    border: 1px solid #aaa;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Definindo o estilo das células do cabeçalho da tabela */
+th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+/* Definindo o estilo das células das linhas ímpares da tabela */
+tr:nth-child(odd) {
+    background-color: #f8f8f8;
+}
