@@ -52,6 +52,7 @@ function handleTableRowItems() {
     }
 }
 
+
 async function init() {
     await handleData();
     handleYear(teams)

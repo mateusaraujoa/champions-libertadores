@@ -1,0 +1,64 @@
+body {
+    color: #aaa;
+    font-family: 'Nunito sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container .hero p {
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #151e2d;
+}
+
+.search {
+    width: 100%;
+    padding: 20px;
+}
+
+.search select {
+    text-align: center;
+    color: #aaa;
+    border: 1px solid #aaa;
+    background-color: #f0f0f0;
+    height: 40px;
+    width: 145px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+table {
+    background-color: #f0f0f0;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    overflow: scroll;
+    height: 100px;
+}
+
+td,
+th {
+    border: 1px solid #aaa;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #151e2d;
+    font-weight: bold;
+}
