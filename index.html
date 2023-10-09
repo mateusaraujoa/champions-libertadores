@@ -1,400 +1,46 @@
 <html>
+
 <head>
     <title>Lista de campeões da Copa Libertadores da América</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Lista de campeões da Copa Libertadores da América</h1>
-    <table border="1">
-        <tr>
-            <th>Ano</th>
-            <th>Campeão</th>
-            <th>Vice-campeão</th>
-        </tr>
-        <tr>
-            <td>1960</td>
-            <td>Peñarol (URU)</td>
-            <td>Olimpia (PAR)</td>
-        </tr>
-        <tr>
-            <td>1961</td>
-            <td>Peñarol (URU)</td>
-            <td>Palmeiras (BRA)</td>
-        </tr>
-        <tr>
-            <td>1962</td>
-            <td>Santos (BRA)</td>
-            <td>Peñarol (URU)</td>
-        </tr>        
-        <tr>
-            <td>1963</td>
-            <td>Santos (BRA)</td>
-            <td>Boca Juniors (ARG)</td>
-        </tr>
-        <tr>
-            <td>1964</td>
-            <td>Independiente (ARG)</td>
-            <td>Nacional (URU)</td>
-        </tr>
-        <tr>
-            <td>1965</td>
-            <td>Independiente (ARG)</td>
-            <td>Peñarol (URU)</td>
-        </tr>
-        <tr>
-            <td>1966</td>
-            <td>Peñarol (URU)</td>
-            <td>River Plate (ARG)</td>
-        </tr>
-        <tr>
-            <td>1967</td>
-            <td>Racing Club (ARG)</td>
-            <td>Nacional (URU)</td>
+    <div class="container">
+        <header>
+            <div class="hero">
+                <img src="conmebol-logo_pt.png" alt="">
+                <p>Lista de campeões da Copa Libertadores da América</p>
+            </div>
 
-        </tr>
-        <tr>
-            <td>1968</td>
-            <td>Estudiantes (ARG)</td>
-            <td>Palmeiras (BRA)</td>
+        </header>
 
-        </tr>
-        <tr>
-            <td>1969</td>
-            <td>Estudiantes (ARG)</td>
-            <td>Nacional (URU)</td>
+        <div class="search">
+            <select name="" id="searchYear" onchange="changeYear()">
+                <option value="">Busca por ano</option>
+            </select>
+        </div>
 
-        </tr>
-        <tr>
-            <td>1970</td>
-            <td>Estudiantes (ARG)</td>
-            <td>Peñarol (URU)</td>
+        <table border="1">
+            <tr>
+                <th>Ano</th>
+                <th>Campeão</th>
+                <th>Vice-campeão</th>
+            </tr>
+            <tbody id="tableBody">
 
-        </tr>
-        <tr>
-            <td>1971</td>
-            <td>Nacional (URU)</td>
-            <td>Estudiantes (ARG)</td>
+            </tbody>
+        </table>
+    </div>
 
-        </tr>
-        <tr>
-            <td>1972</td>
-            <td>Independiente (ARG)</td>
-            <td>Universitario (PER)</td>
-
-        </tr>
-        <tr>
-            <td>1973</td>
-            <td>Independiente (ARG)</td>
-            <td>Colo-Colo (CHI)</td>
-
-        </tr>
-        <tr>
-            <td>1974</td>
-            <td>Independiente (ARG)</td>
-            <td>São Paulo (BRA)</td>
-
-        </tr>
-        <tr>
-            <td>1975</td>
-            <td>Independiente (ARG)</td>
-            <td>Unión Española (CHI)</td>
-
-        </tr>
-        <tr>
-            <td>1976</td>
-            <td>Cruzeiro (BRA)</td>
-            <td>River Plate (ARG)</td>
-
-        </tr>
-        <tr>
-            <td>1977</td>
-            <td>Boca Juniors (ARG)</td>
-            <td>Cruzeiro (BRA)</td>
-
-        </tr>
-        <tr>
-            <td>1978</td>
-            <td>Boca Juniors (ARG)</td>
-            <td>Deportivo Cáli (COL)</td>
-
-        </tr>
-        <tr>
-            <td>1979</td>
-            <td>Olimpia (PAR)</td>
-            <td>Boca Juniors (ARG)</td>
-
-        </tr>
-        <tr>
-            <td>1980</td>
-            <td>Nacional (URU)</td>
-            <td>Internacional (BRA)</td>
-
-        </tr>
-        <tr>
-            <td>1981</td>
-            <td>Flamengo (BRA)</td>
-            <td>Cobreloa (CHI)</td>
-
-        </tr>
-        <tr>
-            <td>1982</td>
-            <td>Peñarol (URU)</td>
-            <td>Cobreloa (CHI)</td>
-
-        </tr>
-        <tr>
-            <td>1983</td>
-            <td>Grêmio (BRA)</td>
-            <td>Peñarol (URU)</td>
-
-        </tr>
-        <tr>
-            <td>1984</td>
-            <td>Independiente (ARG)</td>
-            <td>Grêmio (BRA)</td>
-
-        </tr>
-        <tr>
-            <td>1985</td>
-            <td>Argentinos Juniors (ARG)</td>
-            <td>América de Cáli (COL)</td>
-
-        </tr>
-        <tr>
-            <td>1986</td>
-            <td>River Plate (ARG)</td>
-            <td>América de Cáli (COL)</td>
-
-        </tr>
-        <tr>
-            <td>1987</td>
-            <td>Peñarol (URU)</td>
-            <td>América de Cáli (COL)</td>
-
-        </tr>
-        <tr>
-            <td>1988</td>
-            <td>Nacional (URU)</td>
-            <td>Newell's Old Boys (ARG)</td>
-
-        </tr>
-        <tr>
-            <td>1989</td>
-            <td>Atlético Nacional (COL)</td>
-            <td>Olimpia (PAR)</td>
-
-        </tr>
-        <tr>
-            <td>1990</td>
-            <td>Olimpia (PAR)</td>
-            <td>Barcelona (EQU)</td>
-
-        </tr>
-        <tr>
-            <td>1991</td>
-            <td>Colo-Colo (CHI)</td>
-            <td>Olimpia (PAR)</td>
-
-        </tr>
-        <tr>
-            <td>1992</td>
-            <td>São Paulo (BRA)</td>
-            <td>Newell's Old Boys (BRA)</td>
-
-        </tr>
-        <tr>
-            <td>1993</td>
-            <td>São Paulo (BRA)</td>
-            <td>Universidad Católica (CHI)</td>
-
-        </tr>
-        <tr>
-            <td>1994</td>
-            <td>Vélez Sarsfield (ARG)</td>
-            <td>São Paulo (BRA)</td>
-
-        </tr>
-        <tr>
-            <td>1995</td>
-            <td>Grêmio (BRA)</td>
-            <td>Atlético Nacional (COL)</td>
-
-        </tr>
-        <tr>
-            <td>1996</td>
-            <td>River Plate (ARG)</td>
-            <td>América de Cáli (COL)</td>
-
-        </tr>
-        <tr>
-            <td>1997</td>
-            <td>Palmeiras (BRA)</td>
-            <td>Sporting Cristal (PER)</td>
-
-        </tr>
-        <tr>
-            <td>1998</td>
-            <td>Vasco (BRA)</td>
-            <td>Barcelona (EQU)</td>
-
-        </tr>
-        <tr>
-            <td>1999</td>
-            <td>Palmeiras (BRA)</td>
-            <td>Deportivo Cáli (COL)</td>
-
-        </tr>
-        <tr>
-            <td>2000</td>
-            <td>Boca Juniors (ARG)</td>
-            <td>Palmeiras (BRA)</td>
-
-        </tr>
-        <tr>
-            <td>2001</td>
-            <td>Boca Juniors (ARG)</td>
-            <td>Cruz Azuk (MEX)</td>
-
-        </tr>
-        <tr>
-            <td>2002</td>
-            <td>Olimpia (ARG)</td>
-            <td>São Caetano (BRA)</td>
-
-        </tr>
-        <tr>
-            <td>2003</td>
-            <td>Boca Juniors (ARG)</td>
-            <td>Santos (BRA)</td>
-
-        </tr>
-        <tr>
-            <td>2004</td>
-            <td>Once Caldas (COL)</td>
-            <td>Boca Juniors (ARG)</td>
-
-        </tr>
-        <tr>
-            <td>2005</td>
-            <td>São Paulo (BRA)</td>
-            <td>Athletico Paranaense (BRA)</td>
-
-        </tr>
-        <tr>
-            <td>2006</td>
-            <td>Internacional (BRA)</td>
-            <td>São Paulo (BRA)</td>
-
-        </tr>
-        <tr>
-            <td>2007</td>
-            <td>Boca Juniors (ARG)</td>
-            <td>Nacional (URU)</td>
-
-        </tr>
-        <tr>
-            <td>2008</td>
-            <td>LDU (EQU)</td>
-            <td>Fluminense (BRA)</td>
-
-        </tr>
-        <tr>
-            <td>2009</td>
-            <td>Estudiantes (ARG)</td>
-            <td>Cruzeiro (BRA)</td>
-
-        </tr>
-        <tr>
-            <td>2010</td>
-            <td>Internacional (BRA)</td>
-            <td>Chivas Guadalajara (MEX)</td>
-
-        </tr>
-        <tr>
-            <td>2011</td>
-            <td>Santos (BRA)</td>
-            <td>Peñarol (URU)</td>
-
-        </tr>
-        <tr>
-            <td>2012</td>
-            <td>Corinthians (BRA)</td>
-            <td>Boca Juniors (ARG)</td>
-
-        </tr>
-        <tr>
-            <td>2013</td>
-            <td>Atlético Mineiro (BRA)</td>
-            <td>Olimpia (PAR)</td>
-
-        </tr>
-        <tr>
-            <td>2014</td>
-            <td>San Lorenzo (ARG)</td>
-            <td>Nacional (PAR)</td>
-
-        </tr>
-        <tr>
-            <td>2015</td>
-            <td>River Plate (ARG)</td>
-            <td>Tigres UANL (MEX)</td>
-
-        </tr>
-        <tr>
-            <td>2016</td>
-            <td>Atlético Nacional (COL)</td>
-            <td>Independiente del Valle (EQU)</td>
-
-        </tr>
-        <tr>
-            <td>2017</td>
-            <td>Grêmio (BRA)</td>
-            <td>Lanús (ARG)</td>
-
-        </tr>
-        <tr>
-            <td>2018</td>
-            <td>River Plate (ARG)</td>
-            <td>Boca Juniors (ARG)</td>
-
-        </tr>
-        <tr>
-            <td>2019</td>
-            <td>Flamengo (BRA)</td>
-            <td>River Plate (URU)</td>
-
-        </tr>
-        <tr>
-            <td>2020</td>
-            <td>Palmeiras (BRA)</td>
-            <td>Santos (BRA)</td>
-
-        </tr>
-        <tr>
-            <td>2021</td>
-            <td>Palmeiras (BRA)</td>
-            <td>Flamengo (BRA)</td>
-
-        </tr>
-        <tr>
-            <td>2022</td>
-            <td>Flamengo (BRA)</td>
-            <td>Athletico Paranaense (BRA)</td>
-
-        </tr>
-        
-
-        
-      
-
-    </table>
 
 </body>
+<script src="./main.js"></script>
 
 </html>
-
-
-
